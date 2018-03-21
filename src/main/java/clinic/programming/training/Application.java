@@ -1,29 +1,34 @@
 package clinic.programming.training;
 
-immort java.util.Arraylist;
-import java.util.List
+import java.util.*;
+import java.util.List;
 
-public class Application {
-    public void greet(){
-	    List<String> greetings = new ArrayList<>();
-	    greetings.add("Heloo mani");
+public class Application 
+{
+	public void greet()
+	{
+		List<String> greetings = new ArrayList<>();
+	 	greetings.add("Heloo mani");
 
-	    for (String greeting : greetings){
+		for (String greeting : greetings)
+		{
 		    System.out.println("Greeting: "+ greeting);
-	    }
-    }
+		}
+	 }
 
 	
 
 
-    public Application() {
-        System.out.println ("Inside Application");
-    }
+	public Application()
+	{
+        	System.out.println ("Inside Application");
+    	}
 
     // method main(): ALWAYS the APPLICATION entry point
-    public static void main (String[] args) {
-    	System.out.println ("Starting Application");
-	Application app = new Application();
-	app.greet();
-    }
+    public static void main (String[] args)
+	 {
+    		System.out.println ("Starting Application");
+		Application app = new Application();
+		app.greet();
+	  }
 }
